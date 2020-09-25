@@ -157,6 +157,21 @@ html,body {
     top: 35%;
 }
 
+/****** About *******/
+
+.about {
+    margin: 50px;
+}
+
+.about h1{
+    text-align: center;
+}
+
+.about p{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
 
 /***** Transitions *****/
 
