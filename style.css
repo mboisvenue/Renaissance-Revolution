@@ -80,16 +80,29 @@ html,body {
 
 /***** FORM VALIDATOR *****/
 
-#signup-container {
-    visibility: hidden;
-    position: relative;
+.modal-open {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.container {
+    position: absolute;
     background-color: #fafafa;
     justify-content: center;
     width: 400px;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
-    top: -20%;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.3);
+    left: 30%;
+    top: 20%;
+    z-index: 1;
 }
 
 .form{
@@ -128,17 +141,22 @@ html,body {
     border-color: #777;
 }
 
+#login {
+    top: 35%;
+}
+
 
 /***** Transitions *****/
 
-.fadein{
-    visibility: visible;
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 
-
-.fadein{
-    visibility: hidden;
-}
 
 
 @media (max-width:1300px){
