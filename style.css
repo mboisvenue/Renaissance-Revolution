@@ -52,6 +52,11 @@ html,body {
     font-weight: bold;
 }
 
+.nav-links {
+    color: seashell;
+    text-decoration: none;
+
+}
 
 /***** Login Or Sign up *****/
 .enter-page{
