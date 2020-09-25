@@ -14,6 +14,22 @@ html,body {
     min-height: 100vh;
 }
 
+.welcome {
+    display: block;
+    position: relative;
+    top: 15%;
+    text-align: center;
+    margin: auto;
+    background-color: #625261;
+    border-radius: 15px;
+    width: 1000px;
+    height: 120px;
+    color: seashell;
+    padding-top: 20px;
+    font-size: 1.4rem;
+    box-shadow: 3px 4px rgba(50, 20, 0, 0.5);
+}
+
 /***** NAVBAR *****/
 
 
@@ -107,7 +123,7 @@ html,body {
     margin: auto;
     border-radius: 15px;
     box-shadow: 3px 4px rgba(0, 0, 0, 0.3);
-    left: 30%;
+    left: 40%;
     top: 20%;
     z-index: 1;
 }
@@ -172,6 +188,10 @@ html,body {
     letter-spacing: 1px;
 }
 
+hr {
+    
+}
+
 
 /***** Transitions *****/
 
@@ -194,12 +214,21 @@ html,body {
     .enter-page {
         width: 800px;
     }
+    .container{
+        left: 30%;
+    }
+    .welcome {
+        width: 800px;
+    }
 }
 
 @media (max-width:1050px){
     .navbar ul{
         position: relative;
         left: 40%;
+    }
+    .container{
+        left: 25%;
     }
 }
 
@@ -209,6 +238,9 @@ html,body {
         left: 30%;
     }
     .enter-page {
+        width: 700px;
+    }
+    .welcome {
         width: 700px;
     }
 }
@@ -222,6 +254,14 @@ html,body {
         align-self: center;
     }
     .enter-page {
+        width: 400px;
+    }
+
+    .container{
+        left: 1 0%;
+    }
+    .welcome {
+        height: 200px;
         width: 400px;
     }
 }
