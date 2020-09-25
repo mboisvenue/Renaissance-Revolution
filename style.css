@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+   width:100%;
+    height:100%;
+    background-color: rgba(75, 7, 0, 0.075);
+    min-height: 100vh;
+}
+
+/***** NAVBAR *****/
+
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: #625261;
+    padding: 15px 0;
+    color: seashell;
+    font-family: "Indie Flower";
+    padding: 15px;
+}
+
+.navbar h2{
+    padding-left: 15px;
+}
+
+.navbar ul{
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    left: 60%;
+}
+
+.nav-options {
+    margin: 0 10px;
+}
+
+.navbar h2:hover {
+    cursor: pointer;
+}
+
+.nav-options:hover {
+    cursor: pointer;
+    font-size: 1.10rem;
+    font-weight: bold;
+}
+
+
+/***** Login Or Sign up *****/
+.enter-page{
+    padding-top: 55px;
+    position: relative;
+    background-color: #fafafa;
+    height: 350px;
+    width: 1000px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+    top: 25%;
+}
+
+.entry-btn {
+    margin: 20px 0;
+    background-color: #89BEB3;
+    font-size: 1.7rem;
+    font-family: "Indie Flower";
+    color: seashell;
+    letter-spacing: .3rem;
+}
+
+.entry-btn:hover {
+    font-weight: bold;
+}
+
+/***** FORM VALIDATOR *****/
+
+#signup-container {
+    visibility: hidden;
+    position: relative;
+    background-color: #fafafa;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+    top: -20%;
+}
+
+.form{
+    padding: 20px;
+}
+
+.form-control label{
+    font-size: 1.3rem;
+}
+
+.form-control input{
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form button{
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+}
+
+.form button:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+
+/***** Transitions *****/
+
+.fadein{
+    visibility: visible;
+}
+
+
+.fadein{
+    visibility: hidden;
+}
+
+
+@media (max-width:1300px){
+    .navbar ul{
+        position: relative;
+        left: 50%;
+    }
+    .enter-page {
+        width: 800px;
+    }
+}
+
+@media (max-width:1050px){
+    .navbar ul{
+        position: relative;
+        left: 40%;
+    }
+}
+
+@media (max-width:850px){
+    .navbar ul{
+        position: relative;
+        left: 30%;
+    }
+    .enter-page {
+        width: 700px;
+    }
+}
+
+@media (max-width:750px){
+    .navbar ul{
+        flex-direction: column;
+        left: 25%;
+    }
+    .navbar h2{
+        align-self: center;
+    }
+    .enter-page {
+        width: 400px;
+    }
+}
