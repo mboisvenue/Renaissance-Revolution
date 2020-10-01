@@ -30,6 +30,19 @@ html,body {
     box-shadow: 3px 4px rgba(50, 20, 0, 0.5);
 }
 
+.welcome a{
+    color: seashell;
+    text-decoration: none;
+}
+
+.welcome p a:hover {
+    margin: 0%;
+    padding: 0;
+    cursor: pointer;
+    color: seashell;
+    font-weight: bold;
+}
+
 /***** NAVBAR *****/
 
 
@@ -189,7 +202,45 @@ html,body {
 }
 
 hr {
-    
+    color: #625261;
+    opacity: .5;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 10px;
+    width: 30%;
+    margin: auto;
+}
+
+/***** BLOG *****/
+
+.blog-container {
+
+}
+
+.blog-post{
+ margin: 10px;
+}
+
+.blog-title {
+    position: relative;
+    display: inline-flex;
+    padding-bottom: 5px;
+}
+
+.blog-title h4{
+    position: absolute;
+    left : 300px;
+}
+
+.blog-body {
+ padding-top: 5px;
+}
+
+.blog-post hr {
+    border-top-style: solid;
+    border-width: 3px;
+    width: 100%;
+    margin: auto;
 }
 
 
@@ -258,7 +309,7 @@ hr {
     }
 
     .container{
-        left: 1 0%;
+        left: 10%;
     }
     .welcome {
         height: 200px;
