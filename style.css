@@ -93,7 +93,7 @@ html,body {
 
 /***** Login Or Sign up *****/
 .enter-page{
-    padding-top: 55px;
+    padding-top: 40px;
     position: relative;
     background-color: #fafafa;
     height: 350px;
@@ -104,7 +104,7 @@ html,body {
     top: 25%;
 }
 
-.entry-btn {
+.btn {
     margin: 20px 0;
     background-color: #89BEB3;
     font-size: 1.7rem;
@@ -114,7 +114,7 @@ html,body {
     padding: 10px;
 }
 
-.entry-btn:hover {
+.btn:hover {
     font-weight: bold;
 }
 
@@ -168,7 +168,7 @@ html,body {
     border-color: #777;
 }
 
-.form button{
+form button{
     cursor: pointer;
     background-color: #89BEB3;
     border-radius: 15px;
@@ -181,7 +181,7 @@ html,body {
 }
 
 
-.form button:focus{
+form button:focus{
     outline: 0;
     border-color: #777;
 }
@@ -257,6 +257,44 @@ hr {
     margin: auto;
 }
 
+/***** NEW BLOG POST *****/
+
+.new-post-open{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+
+textarea {
+    resize: none;
+}
+
+.new-post{
+    margin: 0;
+    padding: 10px;
+    left: 39%;
+}
+
+.form-control textarea{
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-control textarea:focus{
+    outline: 0;
+    border-color: #777;
+}
 
 /***** Transitions *****/
 
@@ -305,7 +343,7 @@ hr {
         left: 0;
     }
     .blog-post{
-        padding: 15px 5px; 
+        padding: 5px 5px; 
     }
 }
 

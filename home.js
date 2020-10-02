@@ -7,7 +7,6 @@ var loginBtn = forms[1];
 const openSignup = modalOpen[0];
 const openLogin = modalOpen[1];
 
-console.log(openSignup);
 signupBtn.addEventListener('click', e=> {
     e.preventDefault();
     openSignup.style.display = "block";
@@ -18,6 +17,9 @@ loginBtn.addEventListener('click', e=> {
     e.preventDefault();
     openLogin.style.display = "block";
 });
+
+
+
 
 window.addEventListener('click', e=>{
     if(e.target === openSignup){
