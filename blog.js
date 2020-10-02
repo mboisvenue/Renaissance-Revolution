@@ -1,13 +1,15 @@
-const newPostOpen = document.getElementById('new-post-form')
-const newPostSend = document.getElementById('new-post-send')
-const modalOpen = document.querySelectorAll('.modal-open');
+const newPostOpen = document.getElementById('new-post-form');
+const modalOpen = document.getElementById('new-post-open');
 
 newPostOpen.addEventListener('click', e=>{
     e.preventDefault();
-
+    modalOpen.style.display = "block";
 });
 
-newPostSend.addEventListener('click', e=>{
-    e.preventDefault();
-
-})
+window.addEventListener('click', e=>{
+    if(e.target === modalOpen){
+        modalOpen.style.display = "none";
+    } else {
+        return false;
+    }
+});

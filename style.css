@@ -259,8 +259,9 @@ hr {
 
 /***** NEW BLOG POST *****/
 
-.new-post-open{
+#new-post-open{
     position: fixed;
+    display: none;
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     bottom: 0;
@@ -279,7 +280,7 @@ textarea {
 .new-post{
     margin: 0;
     padding: 10px;
-    left: 39%;
+    left: 30%;
 }
 
 .form-control textarea{
