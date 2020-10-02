@@ -1,6 +1,8 @@
 const forms = document.querySelectorAll('.form');
 const modalOpen = document.querySelectorAll('.modal-open');
 
+const fName = document.getElementById(;)
+
 var signupBtn = forms[0];
 var loginBtn = forms[1];
 
