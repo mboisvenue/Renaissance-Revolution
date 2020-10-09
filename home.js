@@ -2,8 +2,8 @@
 const forms = document.querySelectorAll('.form');
 const modalOpen = document.querySelectorAll('.modal-open');
 
-const signupBtn = forms[0];
-const loginBtn = forms[1];
+const signupForm = forms[0];
+const loginForm = forms[1];
 
 const openSignup = modalOpen[0];
 const openLogin = modalOpen[1];
@@ -36,13 +36,13 @@ function addUser(user){
 /*********** EVENT LISTENERS ************/
 
 // open and close modals
-signupBtn.addEventListener('click', e=> {
+signupForm.addEventListener('click', e=> {
     e.preventDefault();
     openSignup.style.display = "block";
 
 });
 
-loginBtn.addEventListener('click', e=> {
+loginForm.addEventListener('click', e=> {
     e.preventDefault();
     openLogin.style.display = "block";
 });
@@ -60,8 +60,34 @@ window.addEventListener('click', e=>{
 
 //sign up events
 
+function showError(input, message){
+    const formControl = input.parentElement;
+    formControl.className = 'form-control error';
+
+    const small = formControl.querySelector('small');
+    small.textContent = message;
+}
+
+function showSuccess(input){
+    const formControl = input.parentElement;
+    
+    formControl.className = "form-control success";
+}
+
+
+function checkLength(input, min, max){
+    if(input.value < min){
+        showError();
+    }
+
+}
+
+function isValidEmail(){
+
+}
+
+
 signUpSubmit.addEventListener('click', e => {
-    e.preventDefault();
 
     //Sets user info to array
     let user = {
@@ -75,17 +101,9 @@ signUpSubmit.addEventListener('click', e => {
     console.log(user); 
 
     addUser(user);
-    clearInputs();
 });
 
-function clearInputs(){
-    fName.value = ''; 
-    lName.value = ''; 
-    email.value = '';
-    password.value = '';
-    password2.value = '';
-    savedEmail.value = '';
-    savedPassword.value = '';
-}
+
+
 
 

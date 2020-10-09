@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -154,7 +159,7 @@ html,body {
 }
 
 .form-control input{
-    margin: 20px 0;
+    margin: 5px 0;
     padding: 5px;
     font-size: 1.1rem;
     border: 2px solid rgba(0, 0, 0, 0.2);
@@ -167,6 +172,23 @@ html,body {
     outline: 0;
     border-color: #777;
 }
+
+.form-control.success input {
+    border-color: var(--success-color);
+  }
+  
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+
 
 form button{
     cursor: pointer;
@@ -216,7 +238,7 @@ hr {
 }
 
 /***** BLOG *****/
-.wrapper {
+#wrapper {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -351,7 +373,7 @@ textarea {
     .blog-container{
         left: 0;
     }
-    .wrapper {
+    #wrapper {
         grid-template-columns: 50% 50%;
     }
 }
@@ -387,7 +409,7 @@ textarea {
         left: 0;
         margin-top: 25px;
     }
-    .wrapper{
+    #wrapper{
         display: inline;
     }
 }
@@ -417,25 +439,25 @@ textarea {
 }
 
 @media(max-height:850px){
-    .wrapper {
+    #wrapper {
         grid-template-rows: 33% 33%;
     }
 }
 
 @media(max-height:600px){
-    .wrapper {
+    #wrapper {
         grid-template-rows: 50% 50%;
     }
 }
 
 @media(max-height:400px){
-    .wrapper {
+    #wrapper {
         grid-template-rows: 65% 65%;
     }
 }
 
 @media(max-height:300px){
-    .wrapper {
+    #wrapper {
         grid-template-rows: 100% 100%;
     }
 }
